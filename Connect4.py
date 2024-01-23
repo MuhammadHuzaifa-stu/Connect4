@@ -5,9 +5,9 @@ import math
 rows = 6
 cols = 7
 
-blue = (0,0,255)
+blue  = (0,0,255)
 black = (0,0,0)
-red = (255,0,0)
+red   = (255,0,0)
 green = (0,255,0)
 
 def create_board():
@@ -62,15 +62,15 @@ def draw_board(board):
     pygame.display.update()    
 
 game_over = False
-turn = 0
+turn      = 0
 pygame.init()
-square = 100
-width = cols*square
-height = (rows+1)*square
-size = (width, height)
-radius = int(square/2 - 5)
+square    = 100
+width     = cols*square
+height    = (rows+1)*square
+size      = (width, height)
+radius    = int(square/2 - 5)
 
-screen = pygame.display.set_mode(size)
+screen    = pygame.display.set_mode(size)
 draw_board(board)
 
 pygame.display.update()
